@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Odin Recipes</title>
+</head>
+
+
+<style>
+    html, body {
+        height: 100%;
+        margin: 0;
+    }
+
+    .center-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 30vh;
+        flex-direction: column;
+
+    }
+
+    ul.navbar {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #333;
+    }
+
+    ul.navbar li {
+      float: left;
+    }
+
+    ul.navbar li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    .dropdown-content a:hover {
+      background-color: pink;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: black;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+
+    .dropdown-content a {
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+
+    ul.navbar li:hover .dropdown-content {
+      display: block;
+    }
+
+</style>
+<body>
+    <ul class="navbar">
+        <li><a href="#">Home</a></li>
+        <li>
+          <a href="#">Recipes</a>
+          <div class="dropdown-content">
+            <a href="recipes/rose_macarons.html">Rose Macarons</a>
+            <a href="recipes/madeline.html">Madelines</a>
+            <a href="recipes/gateau_victoire.html">Gateau Victoire</a>
+         
+          </div>
+        </li>
+      </ul>
+
+
+    <div class="center-container">
+
+        <div> 
+            <h1>Odin Project Recipes</h1> 
+        </div>
+
+        <div>
+            <h2>Marie Antoinette by Sofia Copolla Inspired</h2>
+        </div>
+
+        
+
+    </div>
+    
+    
+</body>
+</html>
